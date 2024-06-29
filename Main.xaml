@@ -143,7 +143,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="Email Credentials" CacheStrategy="None" DisplayName="Get Credential" FolderPath="ramandeep.m.kaur@accenture.com's workspace" sap:VirtualizedContainerService.HintSize="546,176.66666666666666" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[pwd1]" Username="[username]" />
+      <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="Email Credentials" CacheStrategy="None" DisplayName="Get Credential" FolderPath="Path of Orchestrator folder" sap:VirtualizedContainerService.HintSize="546,176.66666666666666" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[pwd1]" Username="[username]" />
       <TryCatch DisplayName="Try Catch : To check wether files Exists or not if yes then delete and otherwise Go ahead" sap:VirtualizedContainerService.HintSize="546,57.333333333333336" sap2010:WorkflowViewState.IdRef="TryCatch_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -225,7 +225,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:SendMail Bcc="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="Please find the Attached Bills." Cc="rd1355265@gmail.com" DisplayName="Send SMTP Mail Message" Email="rd1355265@gmail.com" EnableSSL="True" From="rd1355265@gmail.com" sap:VirtualizedContainerService.HintSize="388,180.66666666666666" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="True" MailMessage="[item]" Name="Bill Support" Password="[pwd]" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Bill of June Month" To="ldeol5140@gmail.com">
+      <ui:SendMail Bcc="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="Please find the Attached Bills." Cc="[username]" DisplayName="Send SMTP Mail Message" Email="[username]" EnableSSL="True" From="[username]" sap:VirtualizedContainerService.HintSize="388,180.66666666666666" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="True" MailMessage="[item]" Name="Bill Support" Password="[pwd1]" Port="465" SecureConnection="Auto" Server="smtp.gmail.com" Subject="Bill of June Month" To="[username]">
         <ui:SendMail.Files>
           <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
             <InArgument x:TypeArguments="x:String">Address &amp; Subject Information\Sender Details.txt</InArgument>
