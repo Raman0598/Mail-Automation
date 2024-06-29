@@ -1,4 +1,4 @@
-# Mail-Automation
+# Mail-Automation in UiPath
 Scenario :- Fetch the top 10 Sender email address from mails inbox with condition where Subject in the mail Inbox is "Bill" and store the recipetent information in File and get the attachments in the created folder afterward send recipient information to recruiter with dedicated subject line to address the conern. 
 Mail Automation with help of Robotic Process Automation in UiPath this automation process is build to capture the sender address and the subject of the mail it can be used when you get a lot of bills and you need to report the bills information with your seniors.
 **Before starting the email integration follow the following steps:**
